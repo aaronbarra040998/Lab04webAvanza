@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            color: #fff;
+            transition: background 0.5s ease-in-out;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin: 20px 0;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            animation: fadeIn 1s ease-in-out;
+            color: #FFA500; /* Color naranja para el título */
+        }
+
+        p {
+            font-size: 24px;
+            margin: 10px 0;
+            animation: fadeIn 1s ease-in-out;
+            color: #ccc; /* Color gris claro para el texto */
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 24px;
+            margin: 10px;
+            padding: 10px 20px;
+            border: 2px solid #FFA500; /* Borde naranja para los enlaces */
+            border-radius: 5px;
+            color: #FFA500; /* Color naranja para los enlaces */
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #FFA500; /* Fondo naranja al pasar el cursor sobre los enlaces */
+            color: #fff; /* Texto blanco al pasar el cursor sobre los enlaces */
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a la página de inicio</h1>
+    <p>Esta es la página de inicio de nuestra aplicación.</p>
+    <a href="/galeria">Galería</a>
+    <a href="/hora">Hora</a>
+    <a href="/calcular">Fecha</a>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesador de Texto</title>
+    <style>
+        body {
+            background-image: url('https://notion.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F31d440ec-84a5-4edb-9eaa-b37c1902be13%2Fzoom_background_flower.png?id=372131b4-3fd1-4f52-ac6f-6dfcc1950694&table=block&spaceId=e12b42ac-4e54-476f-a4f5-7d6bdb1e61e2&width=2000&userId=&cache=v2');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.9); /* Agregamos transparencia al fondo */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Aumentamos la opacidad de la sombra */
+            text-align: center;
+            max-width: 80%; /* Limitamos el ancho del contenedor para que no sea demasiado ancho en pantallas grandes */
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #007BFF;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            font-size: 20px; /* Reducimos el tamaño de fuente para que sea más legible */
+            margin: 10px 0; /* Espaciado entre elementos de la lista */
+            padding: 10px 20px;
+            border: 2px solid #007BFF;
+            border-radius: 10px;
+            color: #333;
+            background-color: #f8f8f8; /* Agregamos un fondo gris claro */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Procesador de Texto</h1>
+        <ul>
+            <li>Palabras divididas: {palabrasDivididas}</li>
+            <li>Cadena extraída: {cadenaExtraida}</li>
+            <li>Texto sin espacios: {textoSinEspacios}</li>
+            <li>Capitalizado: {capitalizado}</li>
+            <li>Minúsculas: {minusculas}</li>
+            <li>Mayúsculas: {mayusculas}</li>
+            <li>Número de caracteres: {numCaracteres}</li>
+        </ul>
+    </div>
+</body>
+
+</html>

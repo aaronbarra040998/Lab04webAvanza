@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Días Faltantes</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #222;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            padding-right: 5%;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        input[type="date"] {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: none;
+            border-bottom: 2px solid #007BFF;
+            background-color: transparent;
+            color: #333;
+            margin-bottom: 30px;
+            transition: border-color 0.3s ease-in-out;
+        }
+
+        input[type="date"]:focus {
+            border-color: #0056b3;
+        }
+
+        button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de Días Faltantes</h1>
+    <form action="/calcular" method="get">
+        <label for="fecha">Ingresa una fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+        <button type="submit">Calcular Días Faltantes</button>
+    </form>
+</body>
+</html>

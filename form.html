@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor de Prueba</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        span {
+            font-size: 24px;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            font-size: 18px;
+            color: #666;
+            margin: 10px 0;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05);
+        }
+
+        body:hover {
+            background-color: #e0e0e0;
+        }
+
+        .container:hover span,
+        .container:hover li {
+            color: #007BFF;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <span>Hola {nombre}!</span>
+        <ul>
+            <li>{identidad}</li>
+            <li>{poder}</li>
+        </ul>
+    </div>
+</body>
+
+</html>
